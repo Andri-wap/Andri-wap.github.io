@@ -268,6 +268,28 @@
             </footer>
         </div>
     </div>
+    
+    // Mematikan Shortcut Keyboard (Ctrl+C, Ctrl+U, Ctrl+S, dll)
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || // C
+             e.keyCode === 86 || // V
+             e.keyCode === 85 || // U
+             e.keyCode === 83 || // S
+             e.keyCode === 73 || // I
+             e.keyCode === 74)) { // J
+            return false;
+        } else {
+            return true;
+        }
+    };
+
+    // Mematikan Seleksi Teks via CSS lewat JS
+    document.documentElement.style.userSelect = 'none';
+    document.documentElement.style.webkitUserSelect = 'none';
+    document.documentElement.style.msUserSelect = 'none';
+    document.documentElement.style.mozUserSelect = 'none';
+</script>
 
 </body>
 </html>
