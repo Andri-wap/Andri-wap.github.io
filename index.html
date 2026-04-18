@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Profesional | Andri Setiawan</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f3f4f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-text p {
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .item-sub {
+            color: var(--primary-color);
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background: var(--bg-light);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .skill-badge:hover {
+            background: var(--primary-color);
+            color: #fff;
+        }
+
+        .btn-download {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: var(--primary-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-download:hover {
+            background: var(--secondary-color);
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-info {
+                text-align: center;
+                margin-top: 15px;
+            }
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-text">
+                <h1>Andri Setiawan</h1>
+                <p>IT Infrastructure & Network Engineer</p>
+            </div>
+            <div class="contact-info">
+                <p>Email: andri@email.com</p>
+                <p>GitHub: github.com/Andri-wap</p>
+                <p>Tangerang, Indonesia</p>
+            </div>
+        </header>
+
+        <section id="summary">
+            <h2>Profil Profesional</h2>
+            <p>IT profesional yang berfokus pada infrastruktur jaringan, administrasi server, dan sistem keamanan informasi. Berpengalaman dalam mengelola lingkungan Linux dan mengimplementasikan solusi IT yang efisien untuk kebutuhan bisnis.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Pengalaman Kerja</h2>
+            <div class="experience-item">
+                <div class="item-header">
+                    <span>IT Support & Network Admin</span>
+                    <span>2024 - Sekarang</span>
+                </div>
+                <div class="item-sub">Nama Perusahaan / Freelance</div>
+                <ul>
+                    <li>Mengelola konfigurasi jaringan lokal (LAN/WLAN) dan troubleshooting hardware/software.</li>
+                    <li>Otomasi sistem inventaris menggunakan platform Odoo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Keahlian Teknikal</h2>
+            <div class="skills-container">
+                <span class="skill-badge">Arch Linux</span>
+                <span class="skill-badge">Cisco CCNA</span>
+                <span class="skill-badge">Network Engineering</span>
+                <span class="skill-badge">Infrastructure Management</span>
+                <span class="skill-badge">Odoo ERP</span>
+                <span class="skill-badge">Docker & Virtualization</span>
+                <span class="skill-badge">Git/GitHub</span>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Pendidikan</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <span>Teknik Informatika</span>
+                    <span>Lulus 20XX</span>
+                </div>
+                <div class="item-sub">Nama Universitas / Sekolah Tinggi</div>
+            </div>
+        </section>
+
+        <footer style="text-align: center; margin-top: 50px;">
+            <a href="#" class="btn-download">Download PDF CV</a>
+        </footer>
+    </div>
+
+</body>
+</html>
