@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Andri Setiawan</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#0ea5e9',
+            darkbg: '#0f172a',
+            cardbg: '#1e293b'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-darkbg text-slate-200 font-sans antialiased">
+
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 w-full bg-darkbg/90 backdrop-blur border-b border-slate-800 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-white tracking-wider">ANDRI<span class="text-brand">.DEV</span></a>
+      <div class="space-x-6 text-sm font-medium hidden md:block">
+        <a href="#about" class="hover:text-brand transition">Tentang</a>
+        <a href="#experience" class="hover:text-brand transition">Pengalaman</a>
+        <a href="#skills" class="hover:text-brand transition">Keahlian</a>
+        <a href="#certifications" class="hover:text-brand transition">Sertifikasi</a>
+        <a href="#contact" class="hover:text-brand transition">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="pt-32 pb-20 px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+    <div class="md:w-2/3">
+      <span class="px-3 py-1 text-xs font-semibold bg-brand/10 text-brand rounded-full border border-brand/20">IT, Hardware, Software, Network & Security</span>
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white mt-4 mb-4">
+        Andri Setiawan
+      </h1>
+      <h2 class="text-xl md:text-2xl text-slate-400 font-medium mb-6">
+        IT Infrastructure & Network Specialist
+      </h2>
+      <p class="text-slate-300 text-base leading-relaxed mb-8 max-w-2xl">
+        Berkomitmen untuk mengelola, mengamankan, dan mengoptimalkan infrastruktur IT. Memiliki pengalaman profesional mendalam dalam manajemen jaringan, server, keamanan sistem, hingga penanganan hardware/software enterprise.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="px-6 py-3 bg-brand text-white font-semibold rounded-lg shadow-lg hover:bg-sky-600 transition">
+          <i class="fa-solid font-envelope mr-2"></i> Hubungi Saya
+        </a>
+        <a href="#experience" class="px-6 py-3 bg-slate-800 text-slate-200 font-semibold rounded-lg border border-slate-700 hover:bg-slate-700 transition">
+          <i class="fa-solid fa-briefcase mr-2"></i> Lihat Pengalaman
+        </a>
+      </div>
+    </div>
+    <!-- Profile Card Mini -->
+    <div class="md:w-1/3 bg-cardbg p-6 rounded-2xl border border-slate-800 shadow-xl w-full">
+      <div class="flex items-center space-x-4 mb-4">
+        <div class="w-16 h-16 bg-brand/20 text-brand rounded-full flex items-center justify-center text-2xl font-bold border border-brand/40">
+          AS
+        </div>
+        <div>
+          <h3 class="text-white font-bold text-lg">Andri Setiawan</h3>
+          <p class="text-slate-400 text-sm">Sukoharjo, Jawa Tengah</p>
+        </div>
+      </div>
+      <div class="space-y-3 text-sm text-slate-300">
+        <p class="flex items-center"><i class="fa-solid fa-envelope w-6 text-brand"></i> andriwawansetyawan@gmail.com</p>
+        <p class="flex items-center"><i class="fa-solid fa-phone w-6 text-brand"></i> 0895347770070</p>
+        <p class="flex items-center"><i class="fa-brands fa-linkedin w-6 text-brand"></i> linkedin.com/in/andri setiawan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCES -->
+  <section id="experience" class="py-16 bg-slate-900/50 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-white mb-2">Pengalaman Kerja</h2>
+      <p class="text-slate-400 mb-10">Rekam jejak profesional dalam pengelolaan teknologi informasi enterprise.</p>
+
+      <div class="relative border-l-2 border-brand/40 ml-4 space-y-8">
+        <!-- Experience Item -->
+        <div class="relative pl-6">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-brand rounded-full border-4 border-darkbg"></div>
+          <div class="bg-cardbg p-6 rounded-xl border border-slate-800 shadow-lg">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+              <h3 class="text-xl font-bold text-white">IT Specialist / Infrastructure & Network</h3>
+              <span class="text-xs font-semibold px-3 py-1 bg-slate-800 text-slate-300 rounded-md border border-slate-700 w-fit mt-1 md:mt-0">2017 – 2025</span>
+            </div>
+            <p class="text-brand font-medium text-sm mb-4">PT Sri Rejeki Isman Tbk (SRITEX)</p>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm leading-relaxed">
+              <li>Pemasangan, pengaturan, dan konfigurasi peralatan jaringan (WAN, Router, DHCP, DNS).</li>
+              <li>Instalasi, konfigurasi, dan pemeliharaan Cisco Router, Windows Server, serta Linux OS.</li>
+              <li>Troubleshooting & perbaikan infrastruktur jaringan lokal (LAN) maupun luas (WAN).</li>
+              <li>Manajemen keamanan IT (IT Security Policies & Protocol, Firewall, Web & Email Security).</li>
+              <li>Pengelolaan & pemeliharaan server email, pencekalan spam/threats, dan backup data perusahaan.</li>
+              <li>Pemasangan & penanganan perangkat keras CCTV (NVR), UPS, server, printer, serta scanner.</li>
+              <li>Survei, estimasi kebutuhan bahan, proyek instalasi jaringan, dan koordinasi dengan tim/vendor.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & COMPETENCIES -->
+  <section id="skills" class="py-16 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-white mb-2">Keahlian & Kompetensi</h2>
+      <p class="text-slate-400 mb-10">Keahlian teknis dan manajerial yang dikuasai.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Technical Skills -->
+        <div class="bg-cardbg p-6 rounded-xl border border-slate-800">
+          <div class="text-brand text-2xl mb-3"><i class="fa-solid fa-network-wired"></i></div>
+          <h3 class="text-lg font-bold text-white mb-3">Jaringan & Server</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">Cisco Router</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">Windows Server</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">Linux System</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">WAN / LAN</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">DHCP & DNS</span>
+          </div>
+        </div>
+
+        <!-- Security & Hardware -->
+        <div class="bg-cardbg p-6 rounded-xl border border-slate-800">
+          <div class="text-brand text-2xl mb-3"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="text-lg font-bold text-white mb-3">Keamanan & Hardware</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">IT Security Protocol</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">Firewall</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">NVR CCTV</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">System Backup</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">UPS & Peripheral</span>
+          </div>
+        </div>
+
+        <!-- Management & Soft Skills -->
+        <div class="bg-cardbg p-6 rounded-xl border border-slate-800">
+          <div class="text-brand text-2xl mb-3"><i class="fa-solid fa-list-check"></i></div>
+          <h3 class="text-lg font-bold text-white mb-3">Manajemen & Soft Skills</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">Leadership</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">Troubleshooting</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">IT Strategy</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">Vendor Coordination</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded border border-slate-700">Berpikir Logis & Kritis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS & EDUCATION -->
+  <section id="certifications" class="py-16 bg-slate-900/50 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Certifications -->
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-6">Sertifikasi Professional</h2>
+        <div class="space-y-4">
+          <div class="bg-cardbg p-5 rounded-xl border border-slate-800 flex items-start space-x-4">
+            <i class="fa-solid fa-certificate text-brand text-2xl mt-1"></i>
+            <div>
+              <h3 class="font-bold text-white">CCNA CISCO</h3>
+              <p class="text-slate-400 text-sm">Cisco Certified Network Associate</p>
+            </div>
+          </div>
+          <div class="bg-cardbg p-5 rounded-xl border border-slate-800 flex items-start space-x-4">
+            <i class="fa-solid fa-user-shield text-brand text-2xl mt-1"></i>
+            <div>
+              <h3 class="font-bold text-white">NCE CYBER SECURITY</h3>
+              <p class="text-slate-400 text-sm">No. Sertifikat: SERT.5055/BSSN/D2/PS.20.02/07/2024 (BSSN)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-6">Pendidikan</h2>
+        <div class="bg-cardbg p-5 rounded-xl border border-slate-800">
+          <h3 class="font-bold text-white">SMK Negeri 1 Margomulyo</h3>
+          <p class="text-brand text-sm font-medium">Teknik Komputer & Informatika (Multimedia)</p>
+          <p class="text-slate-400 text-xs mt-1">2014 – 2016</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact" class="py-12 border-t border-slate-800 text-center text-slate-400 text-sm">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-white mb-4">Tertarik Bekerja Sama?</h2>
+      <p class="mb-6 max-w-md mx-auto">Silakan hubungi saya untuk diskusi lebih lanjut mengenai kebutuhan IT Infrastructure & Network di perusahaan Anda.</p>
+      <div class="flex justify-center space-x-6 mb-8 text-xl">
+        <a href="mailto:andriwawansetyawan@gmail.com" class="hover:text-brand transition"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/andri setiawan" target="_blank" class="hover:text-brand transition"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://wa.me/62895347770070" target="_blank" class="hover:text-brand transition"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <p>&copy; 2026 Andri Setiawan. Built with Tailwind CSS & GitHub Pages.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
