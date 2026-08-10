@@ -53,7 +53,7 @@
   <nav class="fixed top-0 w-full bg-dark-bg/85 backdrop-blur-md border-b border-dark-border z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#" class="text-xl font-bold font-mono text-white tracking-wider flex items-center gap-2">
-        <i class="fa-solid fa-terminal text-cyber-400"></i> Andri<span class="text-cyber-400">.IT</span>
+        <i class="fa-solid fa-terminal text-cyber-400"></i> Andri<span class="text-cyber-400">.Dev</span>
       </a>
       <div class="space-x-8 text-sm font-medium hidden md:flex">
         <a href="#about" class="hover:text-cyber-400 transition-colors">Tentang Saya</a>
@@ -216,17 +216,17 @@
         <div class="bg-dark-card p-8 rounded-2xl border border-dark-border relative">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 border-b border-dark-border pb-4">
             <div>
-              <h3 class="text-2xl font-bold text-white">CV Kartika Accessories</h3>
+              <h3 class="text-2xl font-bold text-white">CV Kartika Accessories Handphone</h3>
               <p class="text-cyber-400 font-medium">IT Support</p>
             </div>
-            <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-md font-mono text-xs w-fit mt-2 md:mt-0">Juni 2025 – Des 2025</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-md font-mono text-xs w-fit mt-2 md:mt-0">Juni 2025 – Des 2026</span>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-300">
             <ul class="space-y-3">
               <li class="flex items-start gap-2">
                 <i class="fa-solid fa-angle-right text-cyber-400 mt-1"></i>
-                <span>Pemeliharaan rutin perangkat komputer, jaringan lokal (LAN/Wi-Fi toko), dan hardware kasir/ACCURATE.</span>
+                <span>Pemeliharaan rutin perangkat komputer, jaringan lokal (LAN/Wi-Fi toko), dan hardware kasir/POS.</span>
               </li>
               <li class="flex items-start gap-2">
                 <i class="fa-solid fa-angle-right text-cyber-400 mt-1"></i>
@@ -253,7 +253,7 @@
               <h3 class="text-2xl font-bold text-white">PT Sri Rejeki Isman Tbk (Sritex)</h3>
               <p class="text-cyber-400 font-medium">IT Support & Network Engineer</p>
             </div>
-            <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-md font-mono text-xs w-fit mt-2 md:mt-0">Mei 2017 – Feb 2025</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-md font-mono text-xs w-fit mt-2 md:mt-0">2017 – 2025</span>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-300">
@@ -373,7 +373,7 @@
     </div>
   </section>
 
-  <!-- FORM KONTAK -->
+  <!-- FORM KONTAK (INTEGRASI WHATSAPP) -->
   <section id="contact" class="py-16 border-t border-dark-border">
     <div class="max-w-3xl mx-auto px-6">
       <div class="text-center mb-10">
@@ -381,21 +381,21 @@
         <p class="text-slate-400 mt-2">Kirimkan pesan untuk konsultasi atau tawaran kerja sama IT Support & Infrastructure.</p>
       </div>
 
-      <form class="space-y-4 bg-dark-card p-8 rounded-2xl border border-dark-border" onsubmit="event.preventDefault(); alert('Pesan terkirim!');">
+      <form id="waForm" onsubmit="sendToWhatsApp(event)" class="space-y-4 bg-dark-card p-8 rounded-2xl border border-dark-border">
         <div>
           <label class="block text-xs font-mono text-slate-400 mb-2">NAMA LENGKAP</label>
-          <input type="text" placeholder="Masukkan nama Anda" class="w-full bg-dark-bg border border-dark-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyber-500">
+          <input type="text" id="waName" required placeholder="Masukkan nama Anda" class="w-full bg-dark-bg border border-dark-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyber-500">
         </div>
         <div>
           <label class="block text-xs font-mono text-slate-400 mb-2">EMAIL</label>
-          <input type="email" placeholder="nama@perusahaan.com" class="w-full bg-dark-bg border border-dark-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyber-500">
+          <input type="email" id="waEmail" required placeholder="nama@perusahaan.com" class="w-full bg-dark-bg border border-dark-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyber-500">
         </div>
         <div>
           <label class="block text-xs font-mono text-slate-400 mb-2">PESAN / KEBUTUHAN IT</label>
-          <textarea rows="4" placeholder="Tuliskan detail kebutuhan IT Anda..." class="w-full bg-dark-bg border border-dark-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyber-500"></textarea>
+          <textarea id="waMessage" rows="4" required placeholder="Tuliskan detail kebutuhan IT Anda..." class="w-full bg-dark-bg border border-dark-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyber-500"></textarea>
         </div>
-        <button type="submit" class="w-full py-3.5 bg-cyber-500 text-black font-bold rounded-lg hover:bg-cyber-400 transition shadow-lg shadow-cyber-500/20">
-          Kirim Pesan
+        <button type="submit" class="w-full py-3.5 bg-cyber-500 text-black font-bold rounded-lg hover:bg-cyber-400 transition shadow-lg shadow-cyber-500/20 flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Kirim Pesan via WhatsApp
         </button>
       </form>
     </div>
@@ -408,6 +408,31 @@
       <p>Built with Tailwind CSS & GitHub Pages.</p>
     </div>
   </footer>
+
+  <!-- SCRIPT WHATSAPP INTEGRATION -->
+  <script>
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+
+      // Nomor WhatsApp tujuan
+      const phoneNumber = "62895347770070";
+
+      // Ambil nilai dari form
+      const name = document.getElementById("waName").value;
+      const email = document.getElementById("waEmail").value;
+      const message = document.getElementById("waMessage").value;
+
+      // Format template pesan WhatsApp
+      const text = `Halo Andri, saya ingin mendiskusikan kebutuhan IT:%0A%0A` +
+                   `*Nama:* ${encodeURIComponent(name)}%0A` +
+                   `*Email:* ${encodeURIComponent(email)}%0A` +
+                   `*Pesan/Kebutuhan:*%0A${encodeURIComponent(message)}`;
+
+      // Buka tautan WhatsApp di tab baru
+      const waUrl = `https://wa.me/${phoneNumber}?text=${text}`;
+      window.open(waUrl, '_blank');
+    }
+  </script>
 
 </body>
 </html>
